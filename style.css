@@ -13,7 +13,8 @@ body {
 }
 .nav-inner {
   max-width: 1200px;
-  margin: auto;
+  margin: 0;
+  padding-left: 1.5in;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -45,13 +46,15 @@ body {
 /* HERO */
 .content-wrapper {
   max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
+  margin: 2rem 0;
+  padding-left: 1.5in;
+  padding-right: 1.5rem;
 }
 .hero img {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
+  border-radius: 12px;
 }
 .hero-text {
   padding: 1.25rem 0 2rem;
@@ -172,4 +175,54 @@ body {
   border-top: 2px solid #111;
   padding-top: 1rem;
   margin: 2rem 0 1rem;
+}
+
+/* SLIDESHOW */
+.slideshow {
+  position: relative;
+  width: 100%;
+}
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+.slide img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.slideshow-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.prev-btn, .next-btn {
+  background: none;
+  border: 2px solid #111;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+}
+.prev-btn:hover, .next-btn:hover {
+  background: #111;
+  color: #fff;
+}
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+.dot.active {
+  background: #111;
 }
