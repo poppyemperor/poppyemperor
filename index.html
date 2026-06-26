@@ -23,15 +23,52 @@
 
   <main class="content-wrapper">
 
-    <section class="hero">
-      <img src="https://placehold.co/1200x600/111111/ffffff?text=Hero+Image" alt="Hero">
+  <section class="hero">
+  <div class="slideshow">
+
+    <div class="slide active">
+      <img src="backrooms-monster.jpg" alt="Backrooms">
       <div class="hero-text">
-        <span class="eyebrow">Featured</span>
-        <h1>Your Big Headline Goes Right Here</h1>
-        <p class="dek">A one-sentence tease that makes someone want to read more.</p>
-        <span class="byline">By Your Name · June 26, 2026</span>
+        <span class="eyebrow">Film</span>
+        <h1>Backrooms (2026) Review</h1>
+        <p class="dek">Parsons masterfully intertwines lore and thematic messaging in his impressive directorial debut.</p>
+        <span class="byline">By Justin Park · June 1, 2026</span>
       </div>
-    </section>
+    </div>
+
+    <div class="slide">
+      <img src="your-second-image.jpg" alt="Article 2">
+      <div class="hero-text">
+        <span class="eyebrow">Category</span>
+        <h1>Your Second Featured Article</h1>
+        <p class="dek">Dek for your second article goes here.</p>
+        <span class="byline">By Justin Park · June 2, 2026</span>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="your-third-image.jpg" alt="Article 3">
+      <div class="hero-text">
+        <span class="eyebrow">Category</span>
+        <h1>Your Third Featured Article</h1>
+        <p class="dek">Dek for your third article goes here.</p>
+        <span class="byline">By Justin Park · June 3, 2026</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="slideshow-controls">
+    <button class="prev-btn" onclick="changeSlide(-1)">&#8592;</button>
+    <div class="dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+    <button class="next-btn" onclick="changeSlide(1)">&#8594;</button>
+  </div>
+
+</section>
 
     <section class="section-block">
       <h2 class="section-label">Latest</h2>
