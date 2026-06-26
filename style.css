@@ -1,0 +1,128 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fff;
+  color: #111;
+}
+
+/* NAV */
+.site-nav {
+  border-bottom: 2px solid #111;
+  padding: 0 1.5rem;
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 56px;
+}
+.wordmark {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: #111;
+}
+
+/* HERO */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+.hero img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.hero-text {
+  padding: 1.25rem 0 2rem;
+}
+.hero-text h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.05;
+  text-transform: uppercase;
+  margin: 0.3rem 0 0.5rem;
+}
+.eyebrow {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #cc0000;
+}
+.dek {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+.byline {
+  font-size: 0.75rem;
+  color: #888;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* SECTION */
+.section-block {
+  margin-top: 2rem;
+}
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #111;
+  margin-bottom: 1.25rem;
+}
+
+/* CARD GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.card h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  line-height: 1.1;
+}
+.card .eyebrow {
+  display: block;
+  margin-top: 0.6rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .card-grid { grid-template-columns: 1fr; }
+}
